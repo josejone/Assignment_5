@@ -1,14 +1,30 @@
 ﻿using System;
 
-namespace Assignment_5_Part_2
+namespace Assignment_5_Part_1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            DateTime currentDatetime = DateTime.Now;
-            Console.WriteLine(currentDatetime.ToString());
-            //if not wanting to see military time, remove the consoles.writeline for just the time and date
+            // input x as 44 and y as 98
+            int x, y;
+
+            Console.WriteLine("Input the values of x and y: ");
+            x = Convert.ToInt32(Console.ReadLine());
+            y = Convert.ToInt32(Console.ReadLine());
+
+            if ( x==y)
+            {
+                Console.WriteLine("x and y are equal\n");
+            }
+            else
+            {
+                Console.WriteLine("x and y are not equal\n");
+            }
+             
+
+           
+
 
         }
     }
