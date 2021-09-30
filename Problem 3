@@ -1,0 +1,30 @@
+using System;
+
+namespace Assignment_1_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Random apple = new System.Random();
+            
+
+            Console.WriteLine("Insert password");
+            string password = Console.ReadLine();
+
+            if (password.Length < 6)
+            {
+                Console.WriteLine("Your password didn't meet the requirements anf it was altered to ");
+                Console.Write(password);
+                Console.Write("$");
+                Console.Write(apple.Next(0, 9));
+                Console.Write(apple.Next(0, 9));
+                Console.Write(apple.Next(0, 9));
+                Console.Write(apple.Next(0, 9));
+
+            }
+
+
+        }
+    }
+}
